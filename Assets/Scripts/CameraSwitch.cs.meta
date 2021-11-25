@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 35f695a76b0ec8f4ab90e761597cd8f3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ThirdCam: {instanceID: 0}
+  - FirstCam: {fileID: 8873733901719318057, guid: ef083d9f1acde024db7967d8c72c394c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
