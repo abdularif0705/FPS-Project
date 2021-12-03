@@ -23,8 +23,8 @@ public class GunSystem : MonoBehaviour
 
     //Graphics
     public GameObject muzzleFlash, bulletHoleGraphic; // from Unity Particle Pack Asset
-    public CamShake camShake;
-    public float camShakeMagnitude, camShakeDuration;
+    // public CamShake camShake;
+    // public float camShakeMagnitude = .1f, camShakeDuration = .2f;
     public TextMeshProUGUI text;
 
     private void Awake()
@@ -76,8 +76,8 @@ public class GunSystem : MonoBehaviour
         }
 
         //ShakeCamera
-        // CameraShaker.Instance.ShakeOnce(4f, 4f,.1f, 1f); // using EZCameraShaker from Brackey's video (archived Asset)
-        camShake.Shake(camShakeDuration, camShakeMagnitude);
+        CameraShaker.Instance.ShakeOnce(4f, 4f,.1f, 1f); // using EZCameraShaker from Brackey's video (archived Asset)
+        // StartCoroutine(camShake.Shake(camShakeDuration, camShakeMagnitude)); // Don't work for some reason 
 
         //Graphics
         Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0, 180, 0));
